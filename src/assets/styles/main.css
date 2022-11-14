@@ -1,0 +1,30 @@
+@import "variables.css";
+
+body {
+    background-color: var(--color-white);
+    font-family: var(--font-text);
+    font-weight: 300;
+}
+
+article > section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-orange);
+}
+
+article header {
+    position: sticky;
+    top: 0;
+}
+article header h1 {
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    margin-top: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+}
