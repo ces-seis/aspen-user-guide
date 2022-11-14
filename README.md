@@ -2,7 +2,7 @@
 
 This repository contains both the [templated code](#source-files) and the [fully built site](#compiled-site) for CES's SEIS Aspen User Guide.
 
-If you are trying to *view* the SEIS Aspen User Guide and somehow wound up here, please visit: [https://ces-seis.github.io/aspen-user-guide/].
+If you are trying to *view* the SEIS Aspen User Guide and somehow wound up here, please visit: https://ces-seis.github.io/aspen-user-guide/.
 
 # Contributing to the guide
 
@@ -35,7 +35,7 @@ To compile the website, you need
 
 Within the user guide repository, run the command `deno task build` to compile the website once. If all goes well, you'll see a list of urls created (and the files they came from), ending with a summary notice `Site built into ./docs`. The resulting repository can be pushed back to GitHub and the website should refresh within a couple minutes.
 
-If you like to edit the source files of the website while seeing how they look in real-time, you can spin up a local webserver (that is, a webserver that doesn't use the internet, but creates a mock internet connection to share your website over) by running `deno task serve` from the checked out repository. The ongoing output of this program will note when files get recompiled. The website can be viewed by visiting [https://localhost:3000](https://localhost:3000).
+If you like to edit the source files of the website while seeing how they look in real-time, you can spin up a local webserver (that is, a webserver that doesn't use the internet, but creates a mock internet connection to share your website over) by running `deno task serve` from the checked out repository. The ongoing output of this program will note when files get recompiled. The website can be viewed by visiting https://localhost:3000.
 
 ## Source files
 In order to author a help page, a [Markdown](#markdown-primer) file needs to be created somewhere inside the `src/` folder. Where you place the file and what you name it will affect the URL of the page it turns into. All of our page URLs start with `https://ces-seis.github.io/aspen-user-guide`, which we will call `<root>` in the examples below:
