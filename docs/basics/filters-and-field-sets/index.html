@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/aspen-user-guide/assets/styles/modern-normalize.css">
+    <link rel="stylesheet" href="/aspen-user-guide/assets/styles/main.css">
+
+    <title>Using filters and field sets to find the data you need</title>
+</head>
+<body>
+    <main>
+        <article>
+    <header>
+        <h1>Using filters and field sets to find the data you need</h1>
+    </header>
+
+    <p>Aspen stores so much information, that looking at it in one giant table can be overwhelming at best and utterly useless at worst. Filters and field sets are the tools Aspen has built in to narrow down the information within Aspen to match only the specific data you are interested in viewing. Filters select (narrow down) <strong>rows</strong> in a table and field sets select <strong>columns</strong> in a table. Knowing how to use the right combination of both is key to using Aspen effectively.</p>
+<h1>A motivating example</h1>
+<p>Imagine you are looking at a table of student data like this, trying to get addresses for every student who is under 18 in order to send home an important mailing for minors:</p>
+<table>
+<thead>
+<tr>
+<th>Row</th>
+<th>First name</th>
+<th>Last name</th>
+<th>Middle initial</th>
+<th>Suffix</th>
+<th>Date of birth</th>
+<th>Address</th>
+<th>City</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Alex</td>
+<td>Avery</td>
+<td>A</td>
+<td></td>
+<td>1/1/2001</td>
+<td>100 Main St</td>
+<td>Greenfield</td>
+<td>MA</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Barry</td>
+<td>Bellefort</td>
+<td>B</td>
+<td>Jr</td>
+<td>2/2/2002</td>
+<td>20 Downtown Blvd</td>
+<td>Boston</td>
+<td>MA</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Caden</td>
+<td>Correia</td>
+<td>C</td>
+<td></td>
+<td>3/3/2003</td>
+<td>300 Avenue C</td>
+<td>Springfield</td>
+<td>MA</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Dakota</td>
+<td>Dennison</td>
+<td>D</td>
+<td></td>
+<td>4/4/2004</td>
+<td>400 Right Ln</td>
+<td>Worcester</td>
+<td>MA</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Emery</td>
+<td>Ellis</td>
+<td>E</td>
+<td>III</td>
+<td>5/5/2005</td>
+<td>5 Rural Rd</td>
+<td>Pittsfield</td>
+<td>MA</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Felisha</td>
+<td>Fox</td>
+<td>F</td>
+<td></td>
+<td>6/6/2006</td>
+<td>60 West Way</td>
+<td>Leominster</td>
+<td>MA</td>
+</tr>
+</tbody>
+</table>
+<p>This is a lot! Imagine that you only want to see students who are under the age of majority (&lt; 18). In this case, we would use a <em>filter</em>, because we want to reduce the number of students (<strong>rows</strong>). Let's imagine we see a filter in our filter list called <em>Students under 18</em>. Clicking on that filter (in November 2022) will refresh Aspen's page and you will then see:</p>
+<table>
+<thead>
+<tr>
+<th>Row</th>
+<th>First name</th>
+<th>Last name</th>
+<th>Middle initial</th>
+<th>Suffix</th>
+<th>Date of birth</th>
+<th>Address</th>
+<th>City</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>Emery</td>
+<td>Ellis</td>
+<td>E</td>
+<td>III</td>
+<td>5/5/2005</td>
+<td>5 Rural Rd</td>
+<td>Pittsfield</td>
+<td>MA</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Felisha</td>
+<td>Fox</td>
+<td>F</td>
+<td></td>
+<td>6/6/2006</td>
+<td>60 West Way</td>
+<td>Leominster</td>
+<td>MA</td>
+</tr>
+</tbody>
+</table>
+<p>However, there is still so much information there that you don't need to be looking at just to print out labels. The extra information now is extra <strong>columns</strong> (like Middle initial, Suffix, etc.). Let's imagine we see a field set in our list called <em>Mailing fields</em>. Clicking on that field set will refresh Aspen's page and you will then see:</p>
+<table>
+<thead>
+<tr>
+<th>First name</th>
+<th>Last name</th>
+<th>Address</th>
+<th>City</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emery</td>
+<td>Ellis</td>
+<td>5 Rural Rd</td>
+<td>Pittsfield</td>
+<td>MA</td>
+</tr>
+<tr>
+<td>Felisha</td>
+<td>Fox</td>
+<td>60 West Way</td>
+<td>Leominster</td>
+<td>MA</td>
+</tr>
+</tbody>
+</table>
+<p>There! That's your set of mailing addresses.</p>
+<h1>Setting defaults for a given page</h1>
+<p>You'll notice when clicking on the filter or field set button, the first item you see, at the top of the list, is called <em>Manage Filters...</em> or <em>Manage Field Sets...</em>. Clicking on that <em>Manage...</em> item from the menu will make a popup that lists all your filters or field sets available for the page you're looking at. By selecting the item you want to be the default, and clicking the <em>^ Up</em> button repeatedly, you can move that item to the top of the list. Whichever filter and field set combo is at the top of your lists will be the default one for that page.</p>
+<p>Please note that filters and field sets are customizable per each page in Aspen that displays a table. So, you can have one set of defaults for looking at students, another for looking at schedules, another for looking at documents, etc. The flip side of this is that you might need to set the default filter and field set combo for all of your most commonly visited pages in Aspen.</p>
+
+</article>
+    </main>
+
+</body></html>
