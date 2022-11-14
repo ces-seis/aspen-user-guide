@@ -13,6 +13,8 @@ const site = lume({
     location: new URL(site_url),
 });
 
+site.copy("assets", "assets");
+
 site.use(basePath());
 site.use(resolveUrls());
 
