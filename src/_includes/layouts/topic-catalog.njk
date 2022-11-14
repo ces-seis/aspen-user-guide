@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+
+<article>
+    <header>
+        <h1>{{ title }}</h1>
+    </header>
+
+    {{ content | safe }}
+
+    <h2>Help pages within this topic</h2>
+    <ul>
+        {% for page in search.pages(["url^=" + url, "url!=" + url], "title") %}
+        <li><a href={{ page.data.url }}>{{ page.data.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+</article>
