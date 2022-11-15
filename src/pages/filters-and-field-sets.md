@@ -1,5 +1,7 @@
 ---
 title: Using filters and field sets to find the data you need
+tags:
+    - narrowing-data
 ---
 
 Aspen stores so much information, that looking at it in one giant table can be overwhelming at best and utterly useless at worst. Filters and field sets are the tools Aspen has built in to narrow down the information within Aspen to match only the specific data you are interested in viewing. Filters select (narrow down) **rows** in a table and field sets select **columns** in a table. Knowing how to use the right combination of both is key to using Aspen effectively.

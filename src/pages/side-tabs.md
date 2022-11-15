@@ -1,5 +1,7 @@
 ---
 title: Side Tab navigation in Aspen
+tags:
+    - navigation
 ---
 
 Side tabs (ST) are the second-level navigation control in Aspen. Once you have clicked on a [top tab](top-tabs.md), you will see a list of tabs on the side that further divide the content into sub-topics. The side tabs adapt to the top tab that you pick and are not always the same across top tabs or across views.

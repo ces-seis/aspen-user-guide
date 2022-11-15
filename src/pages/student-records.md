@@ -9,7 +9,7 @@ Student records can be viewed from the following navigations (view - top tab):
 
 # Active (current) students
 
-Within School view, you can view active students by selecting the *All Active Students* filter. Within Special Education view, you can view active students by selecting the *Enrollment Status = Active* filter. If you would like these filters to be the default way you look at the student lists, see [here for instructions to set default filters and field sets](basics/filters-and-field-sets.md#setting-defaults-for-a-given-page).
+Within School view, you can view active students by selecting the *All Active Students* filter. Within Special Education view, you can view active students by selecting the *Enrollment Status = Active* filter. If you would like these filters to be the default way you look at the student lists, see [here for instructions to set default filters and field sets](filters-and-field-sets.md#setting-defaults-for-a-given-page).
 
 # Inactive students
 

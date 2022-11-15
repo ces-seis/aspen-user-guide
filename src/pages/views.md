@@ -1,5 +1,7 @@
 ---
 title: Aspen views
+tags:
+    - navigation
 ---
 
 Views change the way that you interact with Aspen by changing how "zoomed in" or "zoomed out" your access to data is. Some of the most commonly used views in Aspen, from widest (most zoomed out) to narrowest (most zoomed in) are:
