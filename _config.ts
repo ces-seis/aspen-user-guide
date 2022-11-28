@@ -15,6 +15,8 @@ const site = lume({
     location: new URL(site_url),
 });
 
+site.ignore("README.md");
+
 site.copy("assets", "assets");
 
 site.use(basePath());
