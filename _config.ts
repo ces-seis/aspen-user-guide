@@ -7,9 +7,11 @@ const gh_repo = "aspen-user-guide";
 const site_url = "https://" + gh_org + ".github.io/" + gh_repo;
 
 const site = lume({
-    src: "./src",
+    src: ".",
     // GitHub Pages requires that the site be published to /docs
-    dest: "./docs",
+    // We build the site out-of-tree to avoid accidentally
+    // checking in the docs folder to main.
+    dest: "../gh-pages/docs",
     location: new URL(site_url),
 });
 
